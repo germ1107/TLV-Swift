@@ -15,7 +15,8 @@ class ViewController: UIViewController {
         
         let button: UIButton = UIButton(type: .custom)
         button.backgroundColor = UIColor.orange
-        button.frame = CGRect(x: 0, y: 100, width: 100, height: 40)
+        button.frame = CGRect(x: 0, y: 100, width: 150, height: 40)
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 14.0)
         button.setTitleColor(UIColor.white, for: .normal)
         button.setTitle("测试", for: .normal)
         button.addTarget(self, action: #selector(buttonAction(sender:)), for: .touchUpInside)
